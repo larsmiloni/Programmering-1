@@ -1,0 +1,77 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>330</y><w>210</w><h>450</h></coordinates><panel_attributes>_Item_
+--
+-itemNumber: String
+-description: String
+-price: int
+-brandName: String
+-weight: double
+-length: double
+-height: double
+-color: String
+-amountInStock: int
+-category: int
+-discountPercentage: double
+--
++getItemNumber(): String
++getDescriptin(): String
++getPrice(): int
++getBrandName(): String
++getWeight(): double
++getLength(): double
++getHeight(): double
++getColor(): String
++getAmountInStock(): int
++getCategory(): Category
++getDiscountPrice(): double:
++getDiscountPercentage(): double
++setPrice(): void
++setAmountInStock(): void
++setDiscountPercentage(): void
++itemClone(): Item
++toString(); String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>330</y><w>210</w><h>230</h></coordinates><panel_attributes>_ItemRegistry_
+--
+-items: ArrayList&lt;Item&gt;
+--
+-getAllItems(): ArrayList&lt;Item&gt;
+-getItemsSize(): int
++getItemWithItemNumber(): Item
++getItemWithDescription(): Item
++addItem(): void
++deleteItem(): void
++changeAmountInStock(): void
++changePrice(): void
++changeDiscount(): void
++getAllItemNumbers(): ArrayList&lt;String&gt;
++getAllDescriptions(): ArrayList&lt;String&gt;
++toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>330</y><w>210</w><h>380</h></coordinates><panel_attributes>_Main_
+--
+-invalidInput: String
+-itemNotExist: String
+-to: String
+-tryAgain: String
+--
++main()
+-testData(): void
+-menu(): void
+-seeAllItems(): void
+-getAllItemNumbers(): void
+-searchItems(): void
+-getItemWithItemNumber(): void
+-getItemWithDescription(): void
+-addItem(): void
+-stringVariableForAddItem(): String
+-doubleVariableForAddItem(): double
+-integerVariableForAddItem(): int
+-discountVariableForAddItem(): double
+-categoryVariableForAddItem(): int
+-deleteItem(): void
+-increaseNumberOfAnItem(): void
+-decreaseNumberOfAnItem(): void
+-changePrice(): void:
+-changeDiscount(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>160</y><w>210</w><h>60</h></coordinates><panel_attributes>_Category_
+--
++fromInteger(): Category</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>210</y><w>50</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-
+m1=0..*
+m2=1..1</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>440</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1..1
+m2=0..*</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element></diagram>

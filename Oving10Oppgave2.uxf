@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>450</y><w>210</w><h>90</h></coordinates><panel_attributes>_Meny_
+--
+- ArrayList&lt;Rett&gt; retter
+--
++ getRetter()
++ getTotPris()
++ toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>640</y><w>210</w><h>180</h></coordinates><panel_attributes>_Rett_
+--
+- String navn
+- String oppskrift
+- String type
+- double pris
+--
++ getNavn()
++ getPris()
++ getOppskrift()
++ getType()
++ toString
++ toKortString</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>180</y><w>210</w><h>170</h></coordinates><panel_attributes>_MenyRegister_
+--
+- ArrayList&lt;Meny&gt; menyer
+- ArrayList&lt;Rett&gt; retter
+--
++ getRetter()
++ getMenyer()
++ nyRett()
++ getRettGittNavn()
++ getAlleRetterAvEnType()
++ nyMeny()
++ getMenyerPrisintervall()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>360</y><w>210</w><h>150</h></coordinates><panel_attributes>_Oving10Oppgave2_
+--
++ main()
+- testData()
+- meny()
+- nyRett()
+- rettGittType()
+- rettGittNavn()
+- nyMeny()
+- menyPrisintervall()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>530</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>340</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>

@@ -1,0 +1,59 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>520</x><y>30</y><w>210</w><h>120</h></coordinates><panel_attributes>_Ordre_
+--
++ ordre-id*
++ ordre dato
++ antatt lev dato
++ kunde-id
++ faktisk lev dato
++ betaling status</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>30</y><w>210</w><h>70</h></coordinates><panel_attributes>_Kunde_
+--
++ kunde-id*
++ navn
++ adresse</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>220</y><w>210</w><h>60</h></coordinates><panel_attributes>_Ordreliste_
+--
++ type
++ antall</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>360</y><w>210</w><h>60</h></coordinates><panel_attributes>_Standar stol_
+--
++ antall på lager
++ pris</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>360</y><w>210</w><h>70</h></coordinates><panel_attributes>_Spesial stol_
+--
++ type
++ deltype-id
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>520</y><w>210</w><h>120</h></coordinates><panel_attributes>_Deltype_
+--
++ deltype-id
++ navn
++ farge
++ pris
++ beskrivelse
++ stasjon-id
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>530</y><w>210</w><h>60</h></coordinates><panel_attributes>_Stasjon_
+--
++ stasjon-id
++ plassering</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>720</y><w>210</w><h>60</h></coordinates><panel_attributes>_Stoldel_
+--
++ deltype-id
++ antall på lager</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>980</x><y>720</y><w>210</w><h>70</h></coordinates><panel_attributes>_Stoff_
+--
++ deltype-id
++ rull nummer
++ antall på lr
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>540</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=1..*
+lagrer &gt;
+&lt; lagres på</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>40</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=0..*
+har bestilt &gt;
+&lt; er bestilt av</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>630</y><w>300</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>141;16;140;50;280;50;280;90;280;50;10;50;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>270</y><w>350</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>151;16;150;50;330;50;330;90;330;50;10;50;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>140</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1..1
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>980</x><y>870</y><w>210</w><h>70</h></coordinates><panel_attributes>_stoffrull_
+--
+ant_meter_rest</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>780</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1.1
+m2=0..*
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>390</y><w>130</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=n..n</panel_attributes><additional_attributes>10;10;90;10;90;130</additional_attributes></element></diagram>

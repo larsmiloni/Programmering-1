@@ -1,0 +1,10 @@
+
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÀÃl
+0
+java:S1220""Move this file to a named package.
+h	java:S116"SRename this field "gÃ¥rdsNr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠŽÀÑ
+B
+java:S1659"'Declare "bruksnavn" on a separate line.(Úˆ§Áúÿÿÿÿ
+[
+java:S1659"EDeclare "gÃ¥rdsNr" and all following declarations on a separate line.(ŠŽÀÑ
+h	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À–ÁÛüÿÿÿÿ
